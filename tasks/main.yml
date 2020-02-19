@@ -7,3 +7,8 @@
 
 # - import_tasks: Ubuntu.yml
 #   when: ansible_distribution == 'Ubuntu'
+
+- name: copy rewrite
+  copy: 
+    src: rewrite
+    dest: /etc/nginx/conf.d/
