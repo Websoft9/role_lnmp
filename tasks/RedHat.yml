@@ -43,11 +43,3 @@
   service:
     name: nginx
     state: restarted
-
-
-- name: Create default website Dir
-  file: 
-    path: /data/wwwroot/www.example.com
-    state: directory
-    owner: nginx
-    group: nginx
